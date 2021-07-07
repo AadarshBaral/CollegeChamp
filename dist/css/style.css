@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Open+Sans:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Prompt:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Open+Sans:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Prompt:wght@500&display=swap");
+.mb-1 {
+  margin-bottom: 20px;
+}
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+}
+
+.main-container {
+  margin: auto;
+  max-width: 1100px;
+}
+
+.btn-secondary {
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+  border: 2px solid #5ea1c0;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background: #5ea1c0;
+  border: none;
+}
+
+.btn-primary {
+  background-image: linear-gradient(to right, #6c84f2 0%, #5dadd1 51%, #516088 100%);
+  font-family: "Prompt", sans-serif;
+  cursor: pointer;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 20px;
+  display: block;
+}
+
+.btn-primary:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.main-nav {
+  background: #e0fbff;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.main-nav .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.main-nav .logo {
+  font-family: 'Arvo' , sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main-nav .logo1 {
+  color: #3f3e3e;
+  background: linear-gradient(13deg, #562ef8 0%, #2f43fa 25%, #692efd 50%, #3468f7 75%, #5c33ff 100%);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  100% {
+    background-position: 400%;
+  }
+}
+
+.main-nav .logo1:hover {
+  cursor: pointer;
+}
+
+.main-nav ul {
+  justify-self: end;
+  display: flex;
+}
+
+.main-nav ul .nav-link {
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.main-nav .toggle-btn {
+  position: absolute;
+  right: 1rem;
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .main-nav .toggle-btn {
+    display: block;
+  }
+  .main-nav .nav-links {
+    display: none;
+  }
+}
+
+.showcase {
+  background: #0f121b;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Open Sans' , sans-serif;
+  line-height: 1.4;
+  background-image: linear-gradient(315deg, #02243d 0%, #0b0b2c 100%);
+}
+
+.showcase .showcase-maintext {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.showcase .showcase-subtext {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.sc-1 {
+  background-image: linear-gradient(315deg, #5a0202 0%, #f36c78 100%);
+}
+
+.sc-2 {
+  background-image: linear-gradient(315deg, #722066 0%, #0b000e 100%);
+}
+
+.sc-3 {
+  background-image: linear-gradient(315deg, #5ea55e 0%, #497207 100%);
+}
+
+.sc-4 {
+  background-image: linear-gradient(315deg, #6038af 0%, #1f0c48 100%);
+}
+
+.sc1-btn {
+  border: 2px solid #f5acac;
+}
+
+.sc1-btn:hover {
+  color: black;
+  background: #f5acac;
+}
+
+.sc2-btn {
+  border: 2px solid #e89de5;
+}
+
+.sc2-btn:hover {
+  color: black;
+  background: #e89de5;
+}
+
+.sc3-btn {
+  border: 2px solid #b2e89d;
+}
+
+.sc3-btn:hover {
+  color: black;
+  background: #b2e89d;
+}
+
+.sc4-btn {
+  border: 2px solid #e89de5;
+}
+
+.sc4-btn:hover {
+  color: black;
+  background: #e89de5;
+}
+
+.main-footer {
+  text-align: center;
+  background: #e1fbff;
+}
+
+.main-footer .footer-text {
+  font-size: 18px;
+  padding: 20px;
+  font-family: 'Open Sans' , serif;
+}
+
+.card-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  margin: 30px 20px  20px;
+  padding: 30px 60px;
+  background: linear-gradient(135deg, #efc7ff 0%, #99c2f8 100%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #101031;
+  box-shadow: rgba(133, 133, 133, 0.686) 0px 22px 70px 4px;
+}
+
+.card .chapter-name {
+  padding-bottom: 8px;
+}
+
+.card .line {
+  background-color: #b7d3dc;
+  width: 100%;
+  height: 5px;
+  margin-bottom: 8px;
+  border-radius: 50px;
+}
+
+.card .card-btn {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 650px) {
+  .card-grid-container {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 45px 50px;
+  }
+}
+
+.dark-theme {
+  background: black;
+}
+
+.mcq-header {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(135deg, #dcb9ff 0%, #5041ee 100%);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: 'Arvo', sans-serif;
+  display: grid;
+  grid-template-rows: repeat 3, 1fr;
+  grid-gap: 10px;
+}
+
+.mcq-header .head {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.mcq-margin {
+  padding: 20px;
+  margin: auto;
+  max-width: 550px;
+  border-left: 1px solid #888888;
+  border-right: 1px solid #888888;
+}
+
+.mcq-margin .mcq-grid-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 3rem;
+}
+
+.mcq-margin .mcq-card {
+  background: white;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.mcq-margin .mcq-card .mcq-header {
+  background: rgba(218, 218, 218, 0.542);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: 'Arvo', sans-serif;
+  font-size: 19px;
+  border: 3px solid #8f8f8f;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.mcq-margin .mcq-card .mcq-option {
+  padding: 10px;
+  margin: 0 10px 10 10px;
+  border-radius: 20px;
+  font-size: 17px;
+  cursor: pointer;
+  border: 1px solid #7c7c7c;
+  width: 100%;
+  line-height: 2;
+  font-family: 'Arvo',sans-serif;
+  backdrop-filter: blur(10px);
+  position: relative;
+  backdrop-filter: blur(50px);
+}
