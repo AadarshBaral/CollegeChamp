@@ -108,14 +108,38 @@ body {
         color: white;
         font-size: 50px;
         text-transform: uppercase;
-        padding: 20px;
     }
+    
+
     .showcase-subtext{
         font-size: 18px;
         margin-bottom: 20px;
         color: white;
     }
+
+    #animate{
+      margin:0px;
+      white-space:nowrap;
+      overflow:hidden;
+      animation:typing 4s steps(22,end) forwards,
+                blink .6s infinite;
+    }
+    @keyframes typing {
+      0% { width:0% }
+      100% { width:100% }
+    }
+    @keyframes blink {
+      0%,100% {
+        border-right:2px solid transparent;
+      }
+      50% {
+        border-right:2px solid rgb(225, 225, 225);
+      }
+    }
+
+    
 }
+
 .sc-1{
     @include backGradient(rgb(90, 2, 2),rgb(243, 108, 120));
 }
