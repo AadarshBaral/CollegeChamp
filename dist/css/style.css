@@ -72,7 +72,7 @@ body {
 }
 
 .main-nav {
-  background: #e0fbff;
+  background: #c3f6ff;
   z-index: 2;
   position: sticky;
   top: 0;
@@ -81,8 +81,10 @@ body {
 
 .main-nav .container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding: 10px;
+  position: relative;
   align-items: center;
 }
 
@@ -126,14 +128,51 @@ body {
   position: absolute;
   right: 1rem;
   display: none;
+  bottom: .5rem;
 }
 
-@media (max-width: 650px) {
+.main-nav .toggle-btn1 {
+  position: absolute;
+  right: 1rem;
+  top: .5rem;
+  display: none;
+  transition: all .2s;
+}
+
+@media (max-width: 600px) {
+  .main-nav .logo {
+    font-size: 22px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .main-nav .nav-links {
+    display: none;
+  }
   .main-nav .toggle-btn {
     display: block;
   }
-  .main-nav .nav-links {
+  .main-nav .hide {
     display: none;
+  }
+  .main-nav .container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-nav .active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+  }
+  .main-nav .act {
+    display: block;
+  }
+  .main-nav .nav-link {
+    margin-top: 20px;
   }
 }
 

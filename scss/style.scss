@@ -3,11 +3,13 @@
 @import "resets";
 @import "variables";
 
+
+
 body {
   font-family: $primary-font;
 }
 .main-nav {
-  background: rgb(224, 251, 255);
+  background: rgb(195, 246, 255);
   z-index: 2;
   position: sticky;
   top: 0;
@@ -15,9 +17,12 @@ body {
 
   .container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 10px;
+    position: relative;
     align-items: center;
+    
   }
 
   .logo {
@@ -66,18 +71,60 @@ body {
     position: absolute;
     right: 1rem;
     display: none;
-  }
-  @media (max-width: 650px) {
-    .toggle-btn {
-      display: block;
-    }
+    bottom: .5rem
 
-    .nav-links {
+  }
+  .toggle-btn1 {
+    position: absolute;
+    right: 1rem;
+    top : .5rem;
+    display: none;
+    transition: all .2s;
+  }
+
+
+  @media (max-width:600px) {
+    .logo{
+      font-size: 22px;
+      padding-right: 20px;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .nav-links{
+      display :none;
+      
+    }
+    .toggle-btn{
+      display: block;
+   
+    }
+    .hide{
       display: none;
     }
-  }
+    .container{
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .active{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-right: 20px;
+    
+    }
+    .act{
+      display: block;
+    }
+    .nav-link{
+      margin-top: 20px;
+      
+    }
+    
 }
-
+}
 //End of navbar
 
 .showcase {
