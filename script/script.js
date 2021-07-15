@@ -18,8 +18,14 @@ toggleButton1.addEventListener('click', () => {
   toggleButton.classList.toggle('hide')
 
 })
-
-
+document.querySelector("iframe").addEventListener("load", 
+    function() {
+        window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+});
 
 
 
