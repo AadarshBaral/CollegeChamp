@@ -3,8 +3,6 @@
 @import "resets";
 @import "variables";
 
-
-
 body {
   font-family: $primary-font;
 }
@@ -22,7 +20,6 @@ body {
     padding: 10px;
     position: relative;
     align-items: center;
-    
   }
 
   .logo {
@@ -71,65 +68,58 @@ body {
     position: absolute;
     right: 1rem;
     display: none;
-    bottom: .5rem
-
+    bottom: 0.5rem;
   }
   .toggle-btn1 {
     position: absolute;
     right: 1rem;
-    top : .5rem;
+    top: 0.5rem;
     display: none;
-    transition: all .2s;
+    transition: all 0.2s;
   }
 
-
-  @media (max-width:600px) {
-    .logo{
+  @media (max-width: 600px) {
+    .logo {
       font-size: 22px;
       padding-right: 20px;
     }
   }
 
   @media (max-width: 850px) {
-    .nav-links{
-      display :none;
-      
-    }
-    .toggle-btn{
-      display: block;
-   
-    }
-    .hide{
+    .nav-links {
       display: none;
     }
-    .container{
+    .toggle-btn {
+      display: block;
+    }
+    .hide {
+      display: none;
+    }
+    .container {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
     }
-    .active{
+    .active {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       padding-right: 20px;
-    
     }
-    .act{
+    .act {
       display: block;
     }
-    .nav-link{
+    .nav-link {
       margin-top: 20px;
-      
     }
-    
-}
+  }
 }
 //End of navbar
 
 .showcase {
   background: rgb(15, 18, 27);
-  height: 50vh;
+  height: 55vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,13 +129,20 @@ body {
   @include backGradient(#02243d, #0b0b2c);
   // color1 : #02243d
   // color2 : #0b0b2c
+
+  @media (min-height: 350px) {
+    .showcase {
+      height: 55vh;
+    }
+  }
+
   .showcase-maintext {
     font-family: $header-font;
     color: white;
     font-size: 50px;
     text-transform: uppercase;
 
-    @media (max-width:400px) {
+    @media (max-width: 400px) {
       font-size: 39px;
     }
   }
@@ -256,6 +253,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 .card {
   margin: 30px 20px 20px;
   padding: 30px 60px;
@@ -266,6 +264,18 @@ body {
   font-family: "Open Sans", sans-serif;
   color: rgb(16, 16, 49);
   box-shadow: rgba(133, 133, 133, 0.686) 0px 22px 70px 4px;
+
+  .img_link_grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    grid-gap: 10px;
+    .card_image {
+      border-right: 1px solid rgb(112, 112, 112);
+      width: 150px;
+      height: 150px;
+    }
+  }
 
   .chapter-name {
     padding-bottom: 8px;
@@ -281,6 +291,7 @@ body {
   .card-btn {
     margin-bottom: 30px;
   }
+
   @media (max-width: 380px) {
     .chapter-name {
       font-size: 20px;
@@ -302,7 +313,10 @@ body {
     padding: 45px 50px;
   }
 }
-
+.less-margin {
+  padding: 10px;
+  margin-right: 10px;
+}
 // starting of the mcq styles
 .dark-theme {
   background: rgb(0, 0, 0);
@@ -411,17 +425,16 @@ body {
   width: 350px;
   justify-content: center;
 }
-@media (max-width : 376px) {
-  .inside-container{
+@media (max-width: 376px) {
+  .inside-container {
     width: 300px;
+  }
 }
-}
-@media (max-width : 322px) {
-  .inside-container{
+@media (max-width: 322px) {
+  .inside-container {
     width: 290px;
+  }
 }
-}
-
 
 input[type="text"],
 input[type="email"] {
@@ -463,9 +476,8 @@ input::placeholder {
   transition: background 0.1s ease-in-out;
   margin-bottom: 20px;
 
-
-  &:hover{
-    border : 2px solid rgb(0, 123, 255);
+  &:hover {
+    border: 2px solid rgb(0, 123, 255);
   }
 
   .fa-google {
@@ -491,6 +503,112 @@ input::placeholder {
   font-size: 17px;
 
 }
+<<<<<<< HEAD
 
 
 
+=======
+//praactice set styles
+//paractice set styles
+//paractice set styles
+//paractice set styles
+//paractice set styles
+//paractice set styles
+//paractice set styles
+
+.set-container {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  max-width: 650px;
+
+  .set-grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 50px;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .the-set-collection {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+  }
+  .practice-set {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr 2fr;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+    .practice-set-index {
+      display: inline-block;
+    }
+    .line-set {
+      width: 1px;
+      height: 40px;
+      background: rgb(148, 148, 148);
+    }
+    .set-plan {
+      padding-right: 10px;
+    }
+  }
+  @media (max-width: 690px) {
+    .set-grid-container {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 30px 10px 30px;
+      grid-gap: 20px;
+    }
+  }
+  @media (max-width: 405px) {
+    .practice-set {
+      padding: 20px;
+    }
+  }
+  @media (max-width: 357px) {
+    .practice-set {
+      font-size: 17px;
+      grid-template-columns: 1fr 20px 4fr 2fr;
+    }
+
+    // .line-set{
+    //   display: none;
+    // }
+  }
+}
+
+.the-mock-test-collection {
+  display: flex;
+  flex-direction: column;
+
+  .test-set {
+    background: linear-gradient(135deg, #2cc8dd 0%, #6078ea 100%);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+    .set-text {
+      padding: 20px 0px 20px 0px;
+    }
+  }
+}
+.shover {
+  transition: transform 0.2s ease-in;
+}
+
+.shover:hover {
+  transform: translateY(-5px);
+}
+>>>>>>> test
