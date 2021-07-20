@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AadarshBaral/CollegeChamp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AadarshBaral/CollegeChamp/issues"
+  },
+  "homepage": "https://github.com/AadarshBaral/CollegeChamp#readme",
   "description": ""
 }
