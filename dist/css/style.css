@@ -821,6 +821,7 @@ input::placeholder {
   color: black;
   text-align: left;
   line-height: 1.7;
+  hyphens: auto;
 }
 
 @media (max-width: 1080px) {
