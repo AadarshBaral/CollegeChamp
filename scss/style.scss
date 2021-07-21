@@ -620,6 +620,8 @@ input::placeholder {
 //blog styles starts here
 //blog styles starts here
 //blog styles starts here
+
+
 .blog-grid-container{
   
   display: grid;
@@ -633,10 +635,10 @@ input::placeholder {
   margin: 2rem;
   position: relative;
 
-
   .blog-title{
     font-size: 2.5rem;
     margin : .5rem 0 .5rem 0;
+
   }
   .line{
     height : 4px;
@@ -738,10 +740,12 @@ input::placeholder {
     .author-date{
       font-size: 1.2rem;
     }
+
   }
 .blog-content{
-  text-align:justify;
-  color : #333;
+  color :black;
+  text-align: left;
+  line-height: 1.7;
 }
 @media (max-width :1080px ) {
   .blog-grid-container {

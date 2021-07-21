@@ -818,9 +818,7 @@ input::placeholder {
 }
 
 .blog-grid-container .blog-content {
-  color: black;
-  text-align: left;
-  line-height: 1.7;
+  color: pink;
 }
 
 @media (max-width: 1080px) {
