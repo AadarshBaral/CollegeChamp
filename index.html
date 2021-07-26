@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Open+Sans:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./dist/css/style.css" />
+    <link rel="stylesheet" href="/dist/css/card.css" />
     <link rel="stylesheet" media="screen and (max-width: 650px)" href="./dist/css/mobile.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -22,14 +24,30 @@
      <div class="main-nav">
       <div class="container">
         <a href="index.html"><p class="logo"><span class="logo1">College</span>Champ</p> </a>
-        
+ 
         <a href="#" class="toggle-btn"><i class="fas fa-bars fa-2x"></i></a>
-        <a href="#" class="toggle-btn1"><i class="fas fa-times fa-2x"></i></i></a>
+
+        <a href="#" class="toggle-btn1"><i class="fas fa-times fa-2x"></i></a>
         <ul class="nav-links">
           
           <a href="index.html"><li class="btn-primary nav-link current">Home</li></a>
+          
           <a href="login.html"><li class="btn-primary nav-link current">login</li></a>
-          <a href="ioe.html"><li class="btn-primary nav-link current">IOE/IOM</li></a>
+          <ul class  ='to-subclass'>
+          <a href="#"><li class="btn-primary nav-link current ">IOE/IOM <span id="btn2" class = 'dropdown' onclick="toggle_visibility('testing');" >></span></li></a>
+
+          <ul id = 'testing' class= 'subclass-items'>
+            <li>
+            <a href="ioe.html"><li class="dropdown-this  current">Physics</li></a></li>
+
+            <li>
+            <a href="ioe.html"><li class="  current">Chemistry</li></a></li>
+            <li>
+            <a href="ioe.html"><li class="  current">Mathematics</li></a></li>
+            <li>
+            <a href="ioe.html"><li class="  current">Mock Test</li></a></li>
+          </ul> 
+          </ul>
           <a href="index.html"><li class="btn-primary nav-link current">+2 Entrance</li></a>
         </ul>
       </div>
@@ -42,25 +60,73 @@
           <a href="ioe.html" class="btn-secondary">Practice Now <i class="fas fa-chevron-down"></i></a>
         </div>
       </div>
-    </div>
+   
 
     <!-- new section test -->
-
-    <div class="container">
+    <div class="blog-new-card-grid">
+    <div class="blog-new-card">
+    <div class="blog-card">
+      <div class="meta">
+        <div
+          class="photo"
+          style="background-image: url(./img/chemistry-min.png)"
+        ></div>
+        <ul class="details">
+          <li class="author"><a href="#">John Doe</a></li>
+          <li class="date">Aug. 24, 2015</li>
+        </ul>
+      </div>
+      <a href="">
+        <div class="description">
+          <h1>What is Engineering?</h1>
+          <!-- <h2>Opening a door to the future</h2> -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eu</p>
+          <p class="read-more">
+            <a href="#">Read More</a>
+          </p>
+        </div>
+      </a>
+    </div>
+    <div class="blog-card">
+      <div class="meta">
+        <div
+          class="photo"
+          style="background-image: url(./img/chemistry-min.png)"
+        ></div>
+        <ul class="details">
+          <li class="author"><a href="#">John Doe</a></li>
+          <li class="date">Aug. 24, 2015</li>
+        </ul>
+      </div>
+      <a href="">
+        <div class="description">
+          <h1>What is Engineering?</h1>
+          <!-- <h2>Opening a door to the future</h2> -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eu</p>
+          <p class="read-more">
+            <a href="#">Read More</a>
+          </p>
+        </div>
+      </a>
+    </div>
+    </div>
+  </div>
+  
+    <!-- <div class="container">
         <div class="index-grid-container">
         <div class="index-card card card1 ">
             <h1 class = 'index-chapter-name chapter-name' >Institute of Engineering/Medical Entrance Preparation</h1>
             
-            <!-- <div class="line"></div> -->
+        
             <a href="ioe.html" class="index-card-btn btn-primary">Start </a>
         </div>
         <div class=" index-card card card1">
             <h1 class = 'index-chapter-name chapter-name'>+2 Entrance Preparation</h1>
-            <!-- <div class="line"></div> -->
+          
             <a href="sets.html" class="index-card-btn  btn-primary">Start </a>
         </div>
     </div>
-    </div>
+    </div> -->
 
    <!-- End of shwocase  -->
     <!-- <div class="sc-3 showcase">
